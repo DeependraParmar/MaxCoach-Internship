@@ -1,5 +1,6 @@
 import './App.scss'
-import { FaAngleDown, FaRegUserCircle, FaSearch } from 'react-icons/fa' 
+import { FaAngleDown, FaAngleRight, FaRegUserCircle, FaSearch } from 'react-icons/fa' 
+import image from './assets/girl.jpg'
 
 function App() {
 
@@ -28,7 +29,17 @@ function App() {
         </main>
       </section>
 
-
+      <section className="hero">
+        <main className="hero_description">
+          <p className="heading">Distant learning for further expansion</p>
+          <p className="description">Learning is a life-long journey that in fact we never find the terminate stop. Stop searching, enjoy the process.</p>
+            <a href="">Download Free Guide</a>
+          <p className='description para'>Have questions? <span> <a href="/free-form">Get Free Form <FaAngleRight /></a></span></p>
+        </main>
+        <main className="hero_image">
+          <img src={image} alt="" />
+        </main>
+      </section>
     </>
   )
 }
